@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script defer src="firebase.js"></script>
+
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div id ="blog-container">
+        <h1 id="Top-title">New Blog Page</h1>
+
+        <div id="all-blogs">
+            <!--This is where all the blog will go once posted-->
+        </div>
+
+    
+        <div id="typing-container">
+            <form>
+                <div class="input-container">
+                    <label>Blog Title:</label>
+                    <input
+                        type="text"
+                        id="blogTitle"
+                    />
+                </div>
+<br>
+                <div class="input-container">
+                    <label>Username:</label>
+                    <input
+                        type="text"
+                        id="username"
+                    />
+                </div>
+<br>
+                <div class="input-container">
+                    <label>Blog Content:</label>
+                    <input
+                        type="text"
+                        id="blogCont"
+                    />
+                </div>
+            </form>
+        </div>
+
+        <button id="post-btn">Post Blog</button>
+    </div>
+</body>
+</html>
